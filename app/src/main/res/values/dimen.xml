@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dashboardFontSize">25dp</dimen>
+
+    <dimen name="fonnSize">16dp</dimen>
+    <dimen name="fontHeaderSize">16dp</dimen>
+</resources>

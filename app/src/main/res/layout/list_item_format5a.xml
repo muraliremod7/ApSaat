@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff0173ba"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/serialNo"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:text="1"
+                android:textColor="#ff00adef"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/work_code"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/allWorkDetails"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:text="171595()/NADEP Compost Pit/Vijayalakshmi kota"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/taskDetails"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:text="task"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/techType"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:text="tech"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/ap_measure"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/ap_total"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/amb_measure"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/amb_total"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextborder"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/isworkDoneSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/yesno"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/cv_measure"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:inputType="number"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/cv_total"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:inputType="number"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/diff_measure"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:inputType="number"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/diff_total"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:inputType="number"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/respPersonName"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/respPersonDesig"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/imp_of_work"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@drawable/edittextsstyle"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:hint="comments"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

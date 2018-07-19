@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_WorkName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/workId"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <TextView
+                    android:id="@+id/tv_WorkId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/workNameorLocation"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <TextView
+                    android:id="@+id/tv_WorkNameOrLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/taskDetails"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <TextView
+                    android:id="@+id/tv_TaskDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/technologyType"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <TextView
+                    android:id="@+id/tv_TechnologyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="Approved Estimation Values
+                    Measurements / Total"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_apprEstValues_Measurements"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="left|center_vertical"
+                        android:padding="2dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+
+                    <TextView
+                        android:id="@+id/tv_apprEstValues_Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="left|center_vertical"
+                        android:padding="2dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="As Per MB Report
+                    Measurements / Total"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_AsPerMBReport_Measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="left|center_vertical"
+                        android:padding="2dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+
+                    <TextView
+                        android:id="@+id/tv_AsPerMBReport_Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="left|center_vertical"
+                        android:padding="2dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/isWorkDone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <Spinner
+                    android:id="@+id/sp_IsWorkDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:entries="@array/yesno"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="Checking Values
+                    Measurements / Total"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_CheckingValues_Measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextsstyle"
+                        android:gravity="left|center_vertical"
+                        android:digits="0,1,2,3,4,5,6,7,8,9,*,."
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+
+                    <EditText
+                        android:id="@+id/et_CheckingValues_Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextsstyle"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="Difference
+                    Measurements / Total"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_Diff_Measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextsstyle"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+
+                    <EditText
+                        android:id="@+id/et_Diff_Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextsstyle"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fonnSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/resPersonName"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <EditText
+                    android:id="@+id/et_RespPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextsstyle"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/resPersonJobDesg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <EditText
+                    android:id="@+id/et_RespPersonDesg"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextsstyle"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/impOfWork"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <EditText
+                    android:id="@+id/et_ImpOfWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextsstyle"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left|center_vertical"
+                    android:padding="2dp"
+                    android:paddingLeft="1dp"
+                    android:text="@string/comments"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontHeaderSize" />
+
+                <EditText
+                    android:id="@+id/et_Comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextsstyle"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/comments"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fonnSize" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/but_Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_fill_button"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fonnSize" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

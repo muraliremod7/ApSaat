@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pronix.android.apssaataudit">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".ssaat"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".SSAATScheme"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".AuditDetailsActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:theme="@style/MyMaterialTheme"
+            >
+        </activity>
+        <activity
+            android:name=".DoortoDoorAtivity"
+            android:theme="@style/MyMaterialTheme"
+            >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".DoortoDoorF5Ativity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".Format5ARow"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".Format4ARow"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".RecordVerificationActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".ReportsMain"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".ReportsActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".Reports5A"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+        <activity
+            android:name=".PanchayatListActivity"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>
