@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pronix.android.apssaataudit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name="com.pronix.android.apssaataudit.ssaat"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.pronix.android.apssaataudit.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.LoginActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.RegistrationActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.SSAATScheme"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.MainActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.AuditDetailsActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.ChangePasswordActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.DoortoDoorAtivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.ProfileActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.DoortoDoorF5Ativity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.Format5ARow"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.Format4ARow"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.RecordVerificationActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.ReportsMain"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.ReportsActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.Reports5A"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+        <activity
+            android:name="com.pronix.android.apssaataudit.PanchayatListActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.pronix.android.apssaataudit.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.pronix.android.apssaataudit.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

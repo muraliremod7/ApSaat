@@ -21,7 +21,7 @@ public class Constants {
     public static UserMasterDO userMasterDO;
 
         public static String URLBase = "http://env-0687861.cloud.cms500.com/apssaat-audit/";
-//    public static String URLBase = "http://192.168.0.113:8080/apssaat-audit/";
+    //public static String URLBase = "http://192.168.0.113:8080/apssaat-audit/";
 //public static String URLBase = "http://localhost:8080/apssaat-audit/";
 
 
